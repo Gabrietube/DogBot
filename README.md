@@ -1,2 +1,2 @@
 # DogBot
-it's a chatbot
+Es un chatbot para discord
