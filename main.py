@@ -1,5 +1,6 @@
 import discord
-from bot_logic import *
+from bot_logic import gen_pass
+from bot_logic import gen_image
 
 # La variable intents almacena los privilegios del bot
 intents = discord.Intents.default()
@@ -35,6 +36,8 @@ async def on_message(message):
         await message.channel.send("https://assets.puzzlefactory.com/puzzle/428/505/original.jpg")
     elif message.content.startswith("$good"):
         await message.channel.send("I'm glad you're well")
+    elif message.content.startswith("$Image"):
+        await message.channel.send(gen_image())
     elif message.content.startswith("$"):
         await message.channel.send("¡ERROR 404!")
         await message.channel.send("Comando no existente")
