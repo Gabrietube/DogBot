@@ -10,4 +10,9 @@ def gen_pass(pass_length):
 
     return password
 
+def gen_image():
+    images = ["https://assets.puzzlefactory.com/puzzle/330/365/original.webp", "https://assets.puzzlefactory.com/puzzle/341/513/original.jpg", "https://assets.puzzlefactory.com/puzzle/292/623/original.webp"]
+    
+    return random.choice(images)
+
     
